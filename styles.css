@@ -1,0 +1,114 @@
+/* General Styling */
+body {
+  font-family: 'Comic Sans MS', sans-serif;
+  background: radial-gradient(circle, #ffe4e1, #ff7e67);
+  color: #222;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Header Styling */
+header {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  position: relative;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #ff4500;
+}
+
+header .neon-frame {
+  position: relative;
+  margin: 20px auto;
+  border: 8px solid #ff4500;
+  padding: 10px;
+  border-radius: 20px;
+  display: inline-block;
+  background: linear-gradient(135deg, #ffdfd4, #ffd4aa);
+}
+
+header .chihuahua-image {
+  width: 300px;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+header .chihuahua-image:hover {
+  transform: scale(1.1) rotate(-10deg);
+}
+
+.speech-bubble {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 10px 15px;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Styling */
+.about-section,
+.fun-section,
+.buy-section {
+  background: white;
+  padding: 30px;
+  margin: 20px auto;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+}
+
+.bubble {
+  border: 2px solid #ff7e67;
+  padding: 20px;
+  border-radius: 50px;
+  position: relative;
+}
+
+.bubble:before {
+  content: "💡";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  font-size: 2rem;
+}
+
+/* Buttons */
+.button {
+  background: linear-gradient(135deg, #ff4500, #ff6347);
+  color: white;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  margin: 10px;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  background: #ff6347;
+}
+
+.buy-now {
+  font-weight: bold;
+  font-size: 1.3rem;
+  animation: bounce 2s infinite;
+}
+
+/* Keyframes */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
